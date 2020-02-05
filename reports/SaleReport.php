@@ -13,7 +13,7 @@ class SaleReport extends \koolreport\KoolReport {
         return array(
             "dataSources"=>array(
                 "automaker"=>array(
-                    "connectionString"=>"mysql:host=localhost;dbname=automaker",
+                    "connectionString"=>"mysql:host=localhost;dbname=".$this->params["dbname"],
                     "username"=>"root",
                     "password"=>"",
                     "charset"=>"utf8"
